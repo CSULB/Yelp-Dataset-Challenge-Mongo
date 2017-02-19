@@ -26,7 +26,7 @@ public class MongoDbHelper {
 	public static boolean open() {
 		try {
 			mongoClient = new MongoClient("localhost", 27017);
-			db = mongoClient.getDatabase("yelp");
+			db = mongoClient.getDatabase("test");
 			System.out.println("Connect to database successfully");
 			return true;
 		} catch (Exception e) {
